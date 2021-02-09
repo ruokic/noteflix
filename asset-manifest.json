@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/noteflix/static/js/main.4e3e352f.chunk.js",
+    "main.js.map": "/noteflix/static/js/main.4e3e352f.chunk.js.map",
+    "runtime-main.js": "/noteflix/static/js/runtime-main.c444acdc.js",
+    "runtime-main.js.map": "/noteflix/static/js/runtime-main.c444acdc.js.map",
+    "static/js/2.906f13e0.chunk.js": "/noteflix/static/js/2.906f13e0.chunk.js",
+    "static/js/2.906f13e0.chunk.js.map": "/noteflix/static/js/2.906f13e0.chunk.js.map",
+    "index.html": "/noteflix/index.html",
+    "static/js/2.906f13e0.chunk.js.LICENSE.txt": "/noteflix/static/js/2.906f13e0.chunk.js.LICENSE.txt",
+    "static/media/noPosterSmall.png": "/noteflix/static/media/noPosterSmall.ea2ad102.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c444acdc.js",
+    "static/js/2.906f13e0.chunk.js",
+    "static/js/main.4e3e352f.chunk.js"
+  ]
+}
