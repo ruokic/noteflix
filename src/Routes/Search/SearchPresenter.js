@@ -39,6 +39,7 @@ const SearchPresenter = ({
         placeholder="Search Movies or TV Shows..." 
         value={searchTerm} 
         onChange={updateTerm} 
+        autoFocus
     />
     </Form>
     {loading ? (<Loader />) : (<>

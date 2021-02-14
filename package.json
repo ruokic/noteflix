@@ -32,7 +32,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://ruokic.github.io/noteflix",
+  "homepage": "https://vigorous-northcutt-83300c.netlify.app/",
   "browserslist": {
     "production": [
       ">0.2%",
