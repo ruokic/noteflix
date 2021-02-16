@@ -14,7 +14,7 @@ export const moviesApi = {
     popular: () => api.get("movie/popular"),
     movieDetail: (id) => api.get(`movie/${id}`, {
         params: {
-            append_to_response: "videos"
+            append_to_response: "videos,credits,similar"
         }
     }),
     search: (term) => api.get("search/movie", {
@@ -28,9 +28,9 @@ export const tvApi = {
     topRated: () => api.get("tv/top_rated"),
     popular: () => api.get("tv/popular"),
     airingToday: () => api.get("tv/airing_today"),
-    showDetail: (id) =>api.get(`tv/${id}`, {
+    showDetail: (id) => api.get(`tv/${id}`, {
         params: {
-            append_to_response: "videos"
+            append_to_response: "videos,external_ids,credits,similar"
         }
     }),
     search: (term) => api.get("search/tv", {
@@ -39,3 +39,7 @@ export const tvApi = {
         }
     })
 };
+
+export const tvSeasonsApi = {
+    seasonDetail: (tvId, SeasonsNum) => api.get(`tv/${tvId}/season/${SeasonsNum}`)
+}

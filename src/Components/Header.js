@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
+import mainImg from "../assets/noteflix.png";
 
 const Header = styled.header`
     color: white;
@@ -24,8 +25,14 @@ const Item = styled.li`
     width: 80px;
     height: 50px;
     text-align: center;
-    border-bottom: 3px solid ${props => props.current ? "#3498db" : "transparent"};
+    border-bottom: 3px solid ${props => props.current ? "#DC1C28" : "transparent"};
     transition: border-bottom 0.5s ease-in-out;
+    &.Home {
+        width: 150px;
+        font-size: 25px;
+        font-weight: 600;
+        color: red;
+    }
 `;
 
 const SLink = styled(Link)`
@@ -33,13 +40,20 @@ const SLink = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
+    & > img {
+        margin-top: 3px;
+        height: 35px;
+    }
 `;
 
 export default withRouter(({ location: { pathname }}) => (
     <Header>
         <List>
-            <Item current={pathname === "/"}>
-                <SLink to="/">Movies</SLink>
+            <Item className="Home" >
+                <SLink to="/"><img src={mainImg} /></SLink>
+            </Item>
+            <Item current={pathname === "/movie"}>
+                <SLink to="/movie">Movies</SLink>
             </Item>
             <Item current={pathname === "/tv"}>
                 <SLink to="/tv">TV</SLink>

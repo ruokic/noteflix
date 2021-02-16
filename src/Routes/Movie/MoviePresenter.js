@@ -11,7 +11,7 @@ const Container = styled.div`
     padding: 20px;
 `;
 
-const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) => 
+const MoviePresenter = ({ nowPlaying, popular, upcoming, loading, error }) => 
     <>
     <Helmet>
         <title>Movies | NoteFlix</title>
@@ -65,7 +65,7 @@ const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
     </Container>)}
     </>
 
-HomePresenter.propTypes = {
+MoviePresenter.propTypes = {
     nowPlaying: PropTypes.array,
     popular: PropTypes.array,
     upcoming: PropTypes.array,
@@ -73,4 +73,4 @@ HomePresenter.propTypes = {
     error: PropTypes.string
 }
 
-export default HomePresenter;
+export default MoviePresenter;
